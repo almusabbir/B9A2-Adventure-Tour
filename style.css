@@ -1,1 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap')
+/* body {
+    font-family: "Mulish", sans-serif;
+    font-family: "Inter", sans-serif;
+} */
+
+header {
+    margin: 135px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > div {
+    display: flex;
+    align-items: center;
+}
+
+header > div > h1{
+    color: #131318;
+    margin-left: 16px;
+    font-family: "Mulish", sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.navbar-desktop > ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-phone {
+    display: none;
+}
+
+header > nav > ul > li > a {
+    text-decoration: none;
+    margin-left: 44px;
+    color: #424247;
+    text-align: center;
+    font-family: "Mulish", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.tour-bar, .home-bar {
+    color: #FF5400;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        margin: 20px;
+    }
+
+    .navbar-desktop {
+        display: none;
+    }
+
+    .navbar-phone {
+        display: block;
+        position: relative;
+    }
+
+    .navbar-phone > ul {
+        display: none;
+    }
+
+    .navbar-phone:hover ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        position: absolute;
+        right: 3px;
+        top: 13px;
+        border: 2px solid #FF5400;
+        border-radius: 4px;
+        width: 60px;
+    }
+    
+    .navbar-phone > ul > li > a {
+        margin: 0;
+        padding-right: 5px;
+        float: right;
+    }
+}

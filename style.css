@@ -3,8 +3,11 @@
     font-family: "Inter", sans-serif;
 } */
 
+header, .banner {
+    margin: 152px;
+}
+
 header {
-    margin: 135px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,6 +49,87 @@ header > nav > ul > li > a {
     color: #FF5400;
 }
 
+.banner {
+    background-image: url(Images/Group_13.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner > h1 {
+    color: #FFF;
+    font-family: "Mulish", sans-serif;
+    font-size: 64px;
+    font-weight: 800;
+}
+
+.banner > p {
+    color: #FFF;
+    text-align: center;
+    font-family: "Mulish", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.banner > form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    padding: 24px;
+}
+
+.banner > form > div {
+    padding-right: 20px;
+    margin-right: 24px;
+    width: 174px;
+    height: 52px;
+    background-color: #FFF;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.banner > form > div > select {
+    outline: none;
+    border: none;
+    width: 174px;
+    height: 25px;
+    padding-left: 18px;
+}
+
+.banner > form > div > input {
+    outline: none;
+    border: none;
+    padding-left: 18px;
+}
+
+.banner > form > div > input::placeholder {
+    color: black;
+    opacity: 1;
+    font-size: 13.5px;
+}
+
+.banner > form > div.find-now-btn {
+    display: flex;
+    justify-content: center;
+    background: #FF5400;
+}
+
+.banner > form > div > button {
+    color: #FFF;
+    text-align: center;
+    border: none;
+    outline: none;
+    margin-left: 5px;
+    background: #FF5400;
+}
+
 @media screen and (max-width: 600px) {
     header {
         margin: 20px;
@@ -80,5 +164,32 @@ header > nav > ul > li > a {
         margin: 0;
         padding-right: 5px;
         float: right;
+    }
+
+    .banner > form {
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.30);
+        padding: 0;
+    }
+
+    .banner > form > div {
+        padding-right: 20px;
+        margin: 24px;
+        width: 174px;
+        height: 52px;
+        background-color: #FFF;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+    }
+
+    .banner > h1 {
+        font-size: 20px;
+    }
+
+    .banner > p {
+        font-size: 10px;
     }
 }

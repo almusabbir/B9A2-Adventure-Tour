@@ -14,12 +14,12 @@ header {
     align-items: center;
 }
 
-header > div {
+header > div, footer > div {
     display: flex;
     align-items: center;
 }
 
-header > div > h1{
+header > div > h1, footer > div h1 {
     color: #131318;
     margin-left: 1vw;
     font-family: "Mulish", sans-serif;
@@ -408,6 +408,19 @@ header > nav > ul > li > a {
     font-family: "Mulish", sans-serif;
     font-size: 8px;
     font-weight: 800;
+}
+
+footer {
+    background: rgba(19, 19, 24, 0.05);
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer > div > hr {
+    border: 1px solid black;
+    width: 85vw;
 }
 
 @media screen and (max-width: 600px) {

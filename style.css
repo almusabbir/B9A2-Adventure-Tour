@@ -3,7 +3,7 @@
     font-family: "Inter", sans-serif;
 } */
 
-header, .banner, .popular-tours, .destination, .why-choose-us {
+header, .banner, .popular-tours, .destination, .why-choose-us, .newsletter {
     margin: 5vw;
 }
 
@@ -319,6 +319,97 @@ header > nav > ul > li > a {
     font-weight: 400;
 }
 
+.newsletter {
+    display: flex;
+    gap: 1vw;
+}
+
+.newsletter-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 1vw;
+    gap: 1vw;
+    height: 25.2vw;
+    width: 38vw;
+}
+
+.newsletter-content > h1 {
+    color: #131318;
+    font-family: "Mulish", sans-serif;
+    font-size: 2vw;
+    font-weight: 800;
+}
+
+.newsletter-content > p {
+    color: #5A5A5D;
+    font-family: "Mulish", sans-serif;
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+.newsletter-content > input {
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    width: 35.8vw;
+    height: 3vw;
+    padding-left: 2vw;
+}
+
+.newsletter-content > button {
+    border: none;
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    font-family: "Mulish", sans-serif;
+    font-size: 1.5vw;
+    font-weight: 800;
+    width: 38vw;
+    height: 3vw;
+}
+
+.newsletter-image {
+    position: relative;
+}
+
+.newsletter-image > img {
+    height: 27.5vw;
+    width: 46vw;
+}
+
+.link-discount {
+    border-radius: 16px;
+    background: #FF5400;
+    width: 15vw;
+    height: 5vw;
+    padding: 0.5vh;
+    transform: rotate(-19.628deg);
+    position: absolute;
+    right: 0.5vw;
+    bottom: 2.7vw;
+}
+
+.link-discount > p.one {
+    color: #FFF;
+    text-align: center;
+    font-family: "Mulish", sans-serif;
+    font-size: 8px;
+    font-weight: 400;
+}
+
+.link-discount > p.two {
+    color: #FFF;
+    text-align: center;
+    font-family: "Mulish", sans-serif;
+    font-size: 8px;
+    font-weight: 800;
+}
+
 @media screen and (max-width: 600px) {
     header, .banner, .popular-tours, .destination {
         margin: 5vw;
@@ -488,5 +579,55 @@ header > nav > ul > li > a {
     
     .handpicked-hotels > p, .world-class-service > p, .best-price-guarantee > p {
         font-size: 2vh;
-    }    
+    }
+    
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+    }
+    
+    .newsletter-content {
+        height: 55vw;
+        width: 83vw;
+    }
+    
+    .newsletter-content > h1 {
+        font-size: 5vh;
+    }
+    
+    .newsletter-content > p {
+        font-size: 2vh;
+    }
+    
+    .newsletter-content > input {
+        width: 80vw;
+        height: 5vw;
+    }
+    
+    .newsletter-content > button {
+        width: 82.3vw;
+        height: 5vw;
+        font-size: 3vw;
+    }
+    
+    .newsletter-image > img {
+        height: 50vw;
+        width: 85vw;
+    }
+    
+    .link-discount {
+        width: 25vw;
+        height: 5vw;
+        right: -1vw;
+        bottom: 4.2vw;
+    }
+    
+    .link-discount > p.one {
+        font-size: 0.5vh;
+    }
+    
+    .link-discount > p.two {
+        font-size: 1vh;
+    }        
 }

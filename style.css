@@ -1,9 +1,4 @@
-/* body {
-    font-family: "Mulish", sans-serif;
-    font-family: "Inter", sans-serif;
-} */
-
-header, .banner, .popular-tours, .destination, .why-choose-us, .newsletter {
+header, .banner, .popular-tours, .destination, .why-choose-us, .newsletter, .plan-trip-and-app-download {
     margin: 5vw;
 }
 
@@ -423,6 +418,60 @@ footer > div > hr {
     width: 85vw;
 }
 
+.plan-trip-and-app-download > h1 {
+    text-align: center;
+    font-size: 2vw;
+    font-family: "Mulish", sans-serif;
+    font-weight: 800;
+}
+
+.trip-download {
+    display: flex;
+    justify-content: space-between;
+}
+
+.plan-trip {
+    border: 1px solid #FF5400;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2vw;
+    height: 30vw;
+    width: 35vw;
+    gap: 1vw;
+}
+
+.plan-trip > h1, .app-download > h1 {
+    font-size: 1.5vw;
+    font-family: "Mulish", sans-serif;
+    font-weight: 800;
+}
+
+.plan-trip > p {
+    font-size: 1vw;
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+}
+
+.plan-trip > button {
+    color: #FFF;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    width: 35vw;
+    height: 2vw;
+    font-size: 1vw;
+    margin-left: 0.5vw;
+    background: #FF5400;
+}
+
+.app-download > img {
+    width: 40vw;
+    height: 25vw;
+}
+
 @media screen and (max-width: 600px) {
     header, .banner, .popular-tours, .destination {
         margin: 5vw;
@@ -642,5 +691,37 @@ footer > div > hr {
     
     .link-discount > p.two {
         font-size: 1vh;
-    }        
+    }
+    
+    .plan-trip-and-app-download > h1 {
+        font-size: 5vh;
+    }
+    
+    .trip-download {
+        flex-direction: column;
+    }
+    
+    .plan-trip {
+        height: 70vw;
+        width: 80vw;
+    }
+    
+    .plan-trip > h1, .app-download > h1 {
+        font-size: 3vh;
+    }
+    
+    .plan-trip > p {
+        font-size: 2vh;
+    }
+    
+    .plan-trip > button {
+        width: 80vw;
+        height: 17vw;
+        font-size: 2vw;
+    }
+    
+    .app-download > img {
+        width: 85vw;
+        height: 50vw;
+    }
 }

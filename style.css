@@ -3,7 +3,7 @@
     font-family: "Inter", sans-serif;
 } */
 
-header, .banner, .popular-tours, .destination {
+header, .banner, .popular-tours, .destination, .why-choose-us {
     margin: 5vw;
 }
 
@@ -254,6 +254,71 @@ header > nav > ul > li > a {
     grid-area: bandarban;
 }
 
+.why-choose-us > h1 {
+    color: #131318;
+    text-align: center;
+    font-family: "Mulish", sans-serif;
+    font-size: 3vw;
+    font-weight: 800;
+}
+
+.why-choose-us > p {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-family: "Mulish", sans-serif;
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+.why-choose-us-content {
+    display: flex;
+    justify-content: center;
+}
+
+.handpicked-hotels {
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    padding: 2vw;
+    margin: 1vw;
+    width: 40vw;
+    height: 30vw;
+}
+
+.world-class-service {
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+    padding: 2vw;
+    margin: 1vw;
+    width: 40vw;
+    height: 30vw;
+}
+
+.best-price-guarantee {
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    padding: 2vw;
+    margin: 1vw;
+    width: 40vw;
+    height: 30vw;
+}
+
+.handpicked-hotels > h1, .world-class-service > h1, .best-price-guarantee > h1 {
+    color: #131318;
+    font-family: "Mulish", sans-serif;
+    font-size: 2vw;
+    font-weight: 800;
+}
+
+.handpicked-hotels > p, .world-class-service > p, .best-price-guarantee > p {
+    color: #5A5A5D;
+    font-family: "Mulish", sans-serif;
+    font-size: 1vw;
+    font-weight: 400;
+}
+
 @media screen and (max-width: 600px) {
     header, .banner, .popular-tours, .destination {
         margin: 5vw;
@@ -388,4 +453,40 @@ header > nav > ul > li > a {
     .destination > p {
         font-size: 2vh;
     }
+
+    .why-choose-us > h1 {
+        font-size: 5vh;
+    }
+    
+    .why-choose-us > p {
+        font-size: 2vh;
+    }
+    
+    .why-choose-us-content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .handpicked-hotels {
+        width: 80vw;
+        height: 55vw;
+    }
+    
+    .world-class-service {
+        width: 80vw;
+        height: 55vw;
+    }
+    
+    .best-price-guarantee {
+        width: 80vw;
+        height: 55vw;
+    }
+    
+    .handpicked-hotels > h1, .world-class-service > h1, .best-price-guarantee > h1 {
+        font-size: 3vw;
+    }
+    
+    .handpicked-hotels > p, .world-class-service > p, .best-price-guarantee > p {
+        font-size: 2vh;
+    }    
 }

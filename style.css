@@ -478,6 +478,11 @@ footer > div > hr {
     gap: 1vw;
 }
 
+.see-all-button {
+    display: flex;
+    justify-content: center;
+}
+
 .image-background-one {
     background-image: url(Images/Group_39.png);
     background-repeat: no-repeat;
@@ -537,6 +542,19 @@ footer > div > hr {
     border-radius: 8px;
     background: #FF5400;
     width: 10vw;
+    height: 2vw;
+    color: #FFF;
+    text-align: center;
+    font-family: "Mulish", sans-serif;
+    font-size: 1vw;
+    font-weight: 800;
+}
+
+.see-all-button > button {
+    border: none;
+    border-radius: 8px;
+    background: #FF5400;
+    width: 15vw;
     height: 2vw;
     color: #FFF;
     text-align: center;
@@ -856,6 +874,12 @@ footer > div > hr {
 
     .details > button {
         width: 15vh;
+        height: 5vh;
+        font-size: 2vh;
+    }
+
+    .see-all-button > button {
+        width: 20vh;
         height: 5vh;
         font-size: 2vh;
     }

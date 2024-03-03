@@ -1,4 +1,4 @@
-header, .banner, .popular-tours, .destination, .why-choose-us, .newsletter, .plan-trip-and-app-download, .deals-and-discounts {
+header, .banner, .popular-tours, .destination, .why-choose-us, .newsletter, .plan-trip-and-app-download, .deals-and-discounts, .get-lost {
     margin: 5vw;
 }
 
@@ -582,8 +582,105 @@ footer > div > hr {
     font-weight: 400;
 }
 
+.get-lost {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.description {
+    width: 45vw;
+}
+
+.description > h1 {
+    color: #131318;
+    font-family: "Mulish", sans-serif;
+    font-size: 3vw;
+    font-weight: 800;
+}
+
+.description > p {
+    color: #5A5A5D;
+    font-family: "Mulish", sans-serif;
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+.description > ul > li {
+    color: #131318;
+    font-family: "Mulish", sans-serif;
+    font-size: 1vw;
+    font-weight: 700;
+}
+
+.description > button {
+    border: none;
+    border-radius: 8px;
+    background: #FF5400;
+    width: 10vw;
+    height: 2vw;
+    color: #FFF;
+    text-align: center;
+    font-family: "Mulish", sans-serif;
+    font-size: 1vw;
+    font-weight: 800;
+}
+
+.mountain {
+    background-image: url(Images/Group_40089.png);
+    background-size: 100% 100%;
+    padding: 2vw;
+    width: 40vw;
+    height: 25vw;
+    display: flex;
+    flex-direction: column;
+    gap: 12vw;
+}
+
+.mountain > p {
+    color: #FFF;
+    text-align: center;
+    font-family: "Mulish", sans-serif;
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.control-first {
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+.control-second {
+    display: flex;
+    gap: 0.5vw;
+}
+
+.control-first > p {
+    color: #F3F3F3;
+    font-family: "Mulish", sans-serif;
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+.duration {
+    display: flex;
+    align-items: center;
+}
+
+.duration > hr {
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    width: 40vw;
+}
+
 @media screen and (max-width: 600px) {
-    header, .banner, .popular-tours, .destination {
+    header, .banner, .popular-tours, .destination, .why-choose-us, .newsletter, .plan-trip-and-app-download, .deals-and-discounts, .get-lost {
         margin: 5vw;
     }
 
@@ -890,5 +987,59 @@ footer > div > hr {
 
     .details > p, .day-night > p {
         font-size: 2vh;
+    }
+
+    
+    .get-lost {
+        flex-direction: column;
+    }
+
+    .description {
+        width: 83vw;
+    }
+
+    .description > h1 {
+        font-size: 5vh;
+    }
+
+    .description > p {
+        font-size: 2vh;
+    }
+
+    .description > ul > li {
+        font-size: 2vh;
+    }
+
+    .description > button {
+        width: 15vh;
+        height: 5vh;
+        font-size: 2vh;
+    }
+
+    .mountain {
+        width: 83vw;
+        height: 40vw;
+        gap: 8vw;
+    }
+
+    .mountain > p {
+        font-size: 3vh;
+    }
+
+    .control-first {
+        gap: 0.5vw;
+    }
+
+    .control-second {
+        gap: 2vw;
+    }
+
+    .control-first > p {
+        font-size: 3vw;
+    }
+
+    .duration > hr {
+        border: 1px solid rgba(255, 255, 255, 0.30);
+        width: 83vw;
     }
 }

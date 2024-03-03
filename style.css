@@ -1,4 +1,4 @@
-header, .banner, .popular-tours, .destination, .why-choose-us, .newsletter, .plan-trip-and-app-download {
+header, .banner, .popular-tours, .destination, .why-choose-us, .newsletter, .plan-trip-and-app-download, .deals-and-discounts {
     margin: 5vw;
 }
 
@@ -420,7 +420,7 @@ footer > div > hr {
 
 .plan-trip-and-app-download > h1 {
     text-align: center;
-    font-size: 2vw;
+    font-size: 3vw;
     font-family: "Mulish", sans-serif;
     font-weight: 800;
 }
@@ -470,6 +470,98 @@ footer > div > hr {
 .app-download > img {
     width: 40vw;
     height: 25vw;
+}
+
+.deals-and-discounts {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.image-background-one {
+    background-image: url(Images/Group_39.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 2vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image-background-two {
+    background-image: url(Images/Group_40.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 2vw;
+}
+
+.deals-and-discounts > h1 {
+    color: #131318;
+    text-align: center;
+    font-family: "Mulish", sans-serif;
+    font-size: 3vw;
+    font-weight: 800;
+}
+
+.deals-and-discounts > p {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-family: "Mulish", sans-serif;
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+.white-background {
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    padding: 2vw;
+    width: 38vw;
+}
+
+.details > h1 {
+    color: #131318;
+    font-family: "Mulish", sans-serif;
+    font-size: 2vw;
+    font-weight: 800;
+}
+
+.details > h2 {
+    color: #FF5400;
+    font-family: "Mulish", sans-serif;
+    font-size: 2vw;
+    font-weight: 800;
+}
+
+.details > button {
+    border: none;
+    border-radius: 8px;
+    background: #FF5400;
+    width: 10vw;
+    height: 2vw;
+    color: #FFF;
+    text-align: center;
+    font-family: "Mulish", sans-serif;
+    font-size: 1vw;
+    font-weight: 800;
+}
+
+.duration-location {
+    display: flex;
+    justify-content: space-between;
+    width: 25vw;
+}
+
+.day-night {
+    display: flex;
+    align-items: center;
+    gap: 0.3vw;
+}
+
+.details > p, .day-night > p {
+    color: #5A5A5D;
+    font-family: "Mulish", sans-serif;
+    font-size: 1vw;
+    font-weight: 400;
 }
 
 @media screen and (max-width: 600px) {
@@ -723,5 +815,56 @@ footer > div > hr {
     .app-download > img {
         width: 85vw;
         height: 50vw;
+    }
+    
+    .image-background-one {
+        padding: 2vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 90vh;
+    }
+
+    .image-background-two {
+        padding: 2vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 90vh;
+    }
+
+    .deals-and-discounts > h1 {
+        font-size: 5vh;
+    }
+
+    .deals-and-discounts > p {
+        font-size: 2vh;
+    }
+
+    .white-background {
+        padding: 2vw;
+        width: 75vw;
+    }
+
+    .details > h1 {
+        font-size: 5vh;
+    }
+
+    .details > h2 {
+        font-size: 5vh;
+    }
+
+    .details > button {
+        width: 15vh;
+        height: 5vh;
+        font-size: 2vh;
+    }
+
+    .duration-location {
+        width: 60vw;
+    }
+
+    .details > p, .day-night > p {
+        font-size: 2vh;
     }
 }
